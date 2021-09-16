@@ -1,0 +1,1124 @@
+Exporter version: 2.80.1, Blender version: 2.83.8
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Users\Mateus\Desktop\CENA.CAPOBIANCO\cena.sala\to_bake\
+	Python World class constructor completed
+	processing begun of mesh:  art_botao
+		processing begun of material:  m_botao
+			processing texture t_explorebutton
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			processing texture t_explorebutton
+				texture type:  emissiveTexture, mapped using: "UVMap"
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  art_link
+		processing begun of material:  m_website_001
+			processing texture t_webstand
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			processing texture t_webstand
+				texture type:  emissiveTexture, mapped using: "UVMap"
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  art_linkseta
+		processing begun of material:  m_setatelao
+			processing texture t_seta
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			processing texture t_seta
+				texture type:  emissiveTexture, mapped using: "UVMap"
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  art_logo11
+		processing begun of material:  m_logo_002
+			processing texture t_logo11
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			processing texture t_logo11
+				texture type:  emissiveTexture, mapped using: "UVMap"
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  art_logo12
+		mesh is an instance of :  art_logo11.  Processing halted.
+	processing begun of mesh:  art_telao
+		processing begun of material:  m_telao
+			processing texture t_videostand
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			processing texture t_videostand
+				texture type:  emissiveTexture, mapped using: "UVMap"
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  art_telaoseta
+		processing begun of material:  m_setatelao
+		registered as also a user of material:  m_setatelao
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  col_telao
+		processing begun of material:  m_colisao
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  col_link
+		processing begun of material:  m_colisao
+		registered as also a user of material:  m_colisao
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  col_porta
+		processing begun of material:  m_colisao
+		registered as also a user of material:  m_colisao
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  obj_hdri
+		processing begun of material:  m_city
+			processing texture t_hdriportland
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			processing texture t_hdriportland
+				texture type:  emissiveTexture, mapped using: "UVMap"
+		num positions      :  1160
+		num normals        :  1160
+		num tangents       :  0
+		num uvs            :  2320
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  450
+	processing begun of mesh:  col_piso
+		processing begun of material:  m_colisaoalpha
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  col_parede
+		processing begun of material:  m_colisaoalpha
+		registered as also a user of material:  m_colisaoalpha
+		num positions      :  18
+		num normals        :  18
+		num tangents       :  0
+		num uvs            :  36
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  8
+	processing begun of mesh:  tel_iniciosala
+		processing begun of material:  m_colisao
+		registered as also a user of material:  m_colisao
+		num positions      :  3
+		num normals        :  3
+		num tangents       :  0
+		num uvs            :  6
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1
+	processing begun of mesh:  obj_cortina02
+		processing begun of material:  zm_cortina
+			WARNING: unsupported node type(ShaderNodeValToRGB) will trigger baking
+			processing texture t_cortina_n
+				texture type:  bumpTexture, mapped using: "UVMap"
+			processing texture t_cortina
+				texture type:  diffuseTexture, mapped using: "UVMap"
+			bake time:  0 min, 0.007 secs
+		num positions      :  529
+		num normals        :  529
+		num tangents       :  0
+		num uvs            :  1058
+		num uvs2           :  0
+		num colors         :  2116
+		num triangles      :  968
+	processing begun of mesh:  obj_cortina01
+		mesh is an instance of :  obj_cortina02.  Processing halted.
+	processing begun of mesh:  obj_laptop
+		processing begun of material:  zm_chrome_001
+		processing begun of material:  m_black
+		processing begun of material:  m_teclado
+			processing texture t_teclado
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#0
+		num positions      :  1987
+		num normals        :  1987
+		num tangents       :  0
+		num uvs            :  3974
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1911
+		WARNING: # of 0 area faces found:  28
+	processing begun of mesh:  obj_luz01
+		processing begun of material:  zm_luz
+		processing begun of material:  zm_metal
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#1
+		num positions      :  1176
+		num normals        :  1176
+		num tangents       :  0
+		num uvs            :  2352
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  992
+	processing begun of mesh:  obj_luz02
+		processing begun of material:  zm_luz
+		processing begun of material:  zm_metal
+		registered as also a user of material:  zm_luz
+		registered as also a user of material:  zm_metal
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#2
+		num positions      :  2054
+		num normals        :  2054
+		num tangents       :  0
+		num uvs            :  4108
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1736
+	processing begun of mesh:  obj_mesa
+		processing begun of material:  m_vidro
+		processing begun of material:  m_vidrolateral
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#3
+		num positions      :  811
+		num normals        :  811
+		num tangents       :  0
+		num uvs            :  1622
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  obj_mesasuporte
+		processing begun of material:  zm_metalbranco
+		num positions      :  2126
+		num normals        :  2126
+		num tangents       :  0
+		num uvs            :  4252
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  896
+	processing begun of mesh:  obj_janela
+		processing begun of material:  zm_metal
+		registered as also a user of material:  zm_metal
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  0
+		num uvs            :  344
+		num uvs2           :  344
+		num colors         :  0
+		num triangles      :  96
+	processing begun of mesh:  obj_placaporta
+		processing begun of material:  zm_metal
+		registered as also a user of material:  zm_metal
+		num positions      :  52
+		num normals        :  52
+		num tangents       :  0
+		num uvs            :  104
+		num uvs2           :  104
+		num colors         :  0
+		num triangles      :  20
+	processing begun of mesh:  obj_placasletra
+		processing begun of material:  m_branco2
+		num positions      :  209
+		num normals        :  209
+		num tangents       :  0
+		num uvs            :  418
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  203
+	processing begun of mesh:  obj_projetor
+		processing begun of material:  zm_metal
+		processing begun of material:  zm_metal
+		processing begun of material:  zm_luz
+		registered as also a user of material:  zm_metal
+		registered as also a user of material:  zm_metal
+		registered as also a user of material:  zm_luz
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#4
+		num positions      :  2960
+		num normals        :  2960
+		num tangents       :  0
+		num uvs            :  5920
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1139
+	processing begun of mesh:  obj_quadro01
+		processing begun of material:  m_black
+		processing begun of material:  m_newyork
+		registered as also a user of material:  m_black
+			processing texture t_newyork
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#5
+		num positions      :  67
+		num normals        :  67
+		num tangents       :  0
+		num uvs            :  134
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  26
+	processing begun of mesh:  obj_quadro02
+		processing begun of material:  m_black
+		processing begun of material:  m_tokyo
+		registered as also a user of material:  m_black
+			processing texture t_tokyo
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#6
+		num positions      :  67
+		num normals        :  67
+		num tangents       :  0
+		num uvs            :  134
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  26
+	processing begun of mesh:  obj_quadro03
+		processing begun of material:  m_black
+		processing begun of material:  m_london
+		registered as also a user of material:  m_black
+			processing texture t_london
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#7
+		num positions      :  67
+		num normals        :  67
+		num tangents       :  0
+		num uvs            :  134
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  26
+	processing begun of mesh:  obj_quadro04
+		processing begun of material:  m_black
+		processing begun of material:  m_paris
+		registered as also a user of material:  m_black
+			processing texture t_paris
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#8
+		num positions      :  67
+		num normals        :  67
+		num tangents       :  0
+		num uvs            :  134
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  26
+	processing begun of mesh:  obj_sofabase1
+		processing begun of material:  zm_metal
+		registered as also a user of material:  zm_metal
+		num positions      :  568
+		num normals        :  568
+		num tangents       :  0
+		num uvs            :  1136
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  224
+	processing begun of mesh:  obj_sofabase2
+		processing begun of material:  zm_metal
+		registered as also a user of material:  zm_metal
+		num positions      :  570
+		num normals        :  570
+		num tangents       :  0
+		num uvs            :  1140
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  224
+	processing begun of mesh:  obj_telaoest
+		processing begun of material:  zm_metalbranco
+		processing begun of material:  m_branco2
+		registered as also a user of material:  zm_metalbranco
+		registered as also a user of material:  m_branco2
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#9
+		num positions      :  145
+		num normals        :  145
+		num tangents       :  0
+		num uvs            :  290
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  86
+	processing begun of mesh:  obj_vaso
+		processing begun of material:  m_plant
+		processing begun of material:  zm_vaso
+			processing texture t_plant_alpha
+				texture type:  diffuseTexture, mapped using: "UVMap"
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#10
+		num positions      :  593
+		num normals        :  593
+		num tangents       :  0
+		num uvs            :  1186
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  640
+	processing begun of mesh:  obj_vaso02
+		processing begun of material:  m_plant
+		processing begun of material:  zm_vaso
+		registered as also a user of material:  m_plant
+		registered as also a user of material:  zm_vaso
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#11
+		num positions      :  258
+		num normals        :  258
+		num tangents       :  0
+		num uvs            :  516
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  244
+	processing begun of mesh:  obj_xicara01
+		processing begun of material:  zm_ceramica_001
+		num positions      :  210
+		num normals        :  210
+		num tangents       :  0
+		num uvs            :  420
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  410
+	processing begun of mesh:  obj_xicara02
+		mesh is an instance of :  obj_xicara01.  Processing halted.
+	processing begun of mesh:  obj_batentemadeira
+		processing begun of material:  zm_wood_001
+			processing texture t_madeiraclara
+				texture type:  diffuseTexture, mapped using: "UVMap_Lightmap"
+		num positions      :  1082
+		num normals        :  1082
+		num tangents       :  0
+		num uvs            :  2164
+		num uvs2           :  2164
+		num colors         :  0
+		num triangles      :  396
+	processing begun of mesh:  obj_piso
+		processing begun of material:  m_pisocoorp_002
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_piso_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_piso_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: NORMAL, mapped using: BakingUV
+			processing texture obj_piso_baked_NORMAL
+				texture type:  bumpTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 42.9411 secs
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  obj_forrosala
+		processing begun of material:  m_brancoforro
+			WARNING: unsupported node type(ShaderNodeRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+		processing begun of material:  zm_metalforro
+			WARNING: unsupported node type(ShaderNodeRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Clearcoat channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_forrosala_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_forrosala_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 6.9955 secs
+		num positions      :  112
+		num normals        :  112
+		num tangents       :  0
+		num uvs            :  224
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  52
+	processing begun of mesh:  obj_livros
+		processing begun of material:  zm_livros_001
+			WARNING: unsupported node type(ShaderNodeRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+		processing begun of material:  zm_livros
+			WARNING: unsupported node type(ShaderNodeRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_livros_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_livros_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 1.6762 secs
+		num positions      :  618
+		num normals        :  618
+		num tangents       :  0
+		num uvs            :  1236
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  270
+	processing begun of mesh:  obj_lousa
+		processing begun of material:  m_lousa
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+		processing begun of material:  zm_lousa02
+			WARNING: unsupported node type(ShaderNodeRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_lousa_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_lousa_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 3.3801 secs
+		num positions      :  63
+		num normals        :  63
+		num tangents       :  0
+		num uvs            :  126
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  26
+	processing begun of mesh:  obj_mesaapoio
+		processing begun of material:  zm_woodmesa
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_mesaapoio_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_mesaapoio_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 4.0566 secs
+		num positions      :  25
+		num normals        :  25
+		num tangents       :  0
+		num uvs            :  50
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  10
+	processing begun of mesh:  obj_mesaapoio_001
+		processing begun of material:  zm_woodmesa02
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_mesaapoio_001_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_mesaapoio_001_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 6.4919 secs
+		num positions      :  81
+		num normals        :  81
+		num tangents       :  0
+		num uvs            :  162
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  30
+	processing begun of mesh:  obj_mesacanto
+		processing begun of material:  zm_woodmesa03
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_mesacanto_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_mesacanto_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 4.0709 secs
+		num positions      :  50
+		num normals        :  50
+		num tangents       :  0
+		num uvs            :  100
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  20
+	processing begun of mesh:  obj_painel
+		processing begun of material:  zm_woodpainel
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_painel_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_painel_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 13.7885 secs
+		num positions      :  2500
+		num normals        :  2500
+		num tangents       :  0
+		num uvs            :  5000
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  996
+	processing begun of mesh:  obj_paredes
+		processing begun of material:  m_parede
+		processing begun of material:  m_pilar
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_paredes_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_paredes_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 10.2046 secs
+		num positions      :  391
+		num normals        :  391
+		num tangents       :  0
+		num uvs            :  782
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  194
+	processing begun of mesh:  obj_portamadeira
+		processing begun of material:  zm_wood_001
+		registered as also a user of material:  zm_wood_001
+		num positions      :  318
+		num normals        :  318
+		num tangents       :  0
+		num uvs            :  636
+		num uvs2           :  636
+		num colors         :  0
+		num triangles      :  130
+	processing begun of mesh:  obj_prateleira
+		processing begun of material:  zm_woodprateleira
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_prateleira_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_prateleira_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 3.6032 secs
+		num positions      :  26
+		num normals        :  26
+		num tangents       :  0
+		num uvs            :  52
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  10
+	processing begun of mesh:  obj_rodape
+		processing begun of material:  m_pisocoorp_001
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_rodape_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_rodape_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: NORMAL, mapped using: BakingUV
+			processing texture obj_rodape_baked_NORMAL
+				texture type:  bumpTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 4.4289 secs
+		num positions      :  139
+		num normals        :  139
+		num tangents       :  0
+		num uvs            :  278
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  54
+	processing begun of mesh:  obj_sofa1
+		processing begun of material:  zm_tecidosofa
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_sofa1_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_sofa1_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: NORMAL, mapped using: BakingUV
+			processing texture obj_sofa1_baked_NORMAL
+				texture type:  bumpTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 8.8227 secs
+		num positions      :  1757
+		num normals        :  1757
+		num tangents       :  0
+		num uvs            :  3514
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1504
+	processing begun of mesh:  obj_sofa2
+		processing begun of material:  zm_tecido
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_sofa2_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_sofa2_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: NORMAL, mapped using: BakingUV
+			processing texture obj_sofa2_baked_NORMAL
+				texture type:  bumpTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 9.1294 secs
+		num positions      :  881
+		num normals        :  881
+		num tangents       :  0
+		num uvs            :  1762
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  752
+	processing begun of mesh:  obj_tapete1
+		processing begun of material:  m_tapete_001
+			WARNING: unsupported node type(ShaderNodeValToRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_tapete1_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_tapete1_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 6.1618 secs
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  obj_tapete2
+		processing begun of material:  m_tapete_002
+			WARNING: unsupported node type(ShaderNodeValToRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_tapete2_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_tapete2_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 6.1454 secs
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  obj_tapete3
+		processing begun of material:  m_tapete
+			WARNING: unsupported node type(ShaderNodeValToRGB) will trigger baking
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_tapete3_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_tapete3_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 2.0842 secs
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  obj_metais
+		processing begun of material:  zm_metal
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Clearcoat channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_metais_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_metais_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 1.8909 secs
+		num positions      :  2095
+		num normals        :  2095
+		num tangents       :  0
+		num uvs            :  4190
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  880
+	processing begun of mesh:  obj_mesacantometal
+		processing begun of material:  zm_metal
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Clearcoat channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_mesacantometal_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_mesacantometal_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 1.9518 secs
+		num positions      :  478
+		num normals        :  478
+		num tangents       :  0
+		num uvs            :  956
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  208
+	processing begun of mesh:  obj_cadeira01
+		processing begun of material:  m_branco
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+		processing begun of material:  zm_chrome
+		processing begun of material:  zm_woodcadeira
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_cadeira01_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_cadeira01_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 3.4318 secs
+		num positions      :  1138
+		num normals        :  1138
+		num tangents       :  0
+		num uvs            :  2276
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  868
+	processing begun of mesh:  obj_cadeira02
+		mesh is an instance of :  obj_cadeira01.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa
+		processing begun of material:  m_meshchair
+		processing begun of material:  zm_black
+		processing begun of material:  zm_metal
+			processing texture t_meshchair
+				texture type:  diffuseTexture, mapped using: "UVMap_Lightmap"
+		registered as also a user of material:  zm_metal
+		processing begun of multimaterial:  capobianco_sala.Multimaterial#12
+		num positions      :  1468
+		num normals        :  1468
+		num tangents       :  0
+		num uvs            :  2936
+		num uvs2           :  2936
+		num colors         :  0
+		num triangles      :  742
+	processing begun of mesh:  obj_cadeiracoorporativa_001
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_002
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_003
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_004
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_005
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_006
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_007
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_008
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_009
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_010
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_011
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_012
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_013
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_014
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_cadeiracoorporativa_015
+		mesh is an instance of :  obj_cadeiracoorporativa.  Processing halted.
+	processing begun of mesh:  obj_espada
+		processing begun of material:  m_espada
+			processing texture t_espada
+				texture type:  diffuseTexture, mapped using: "UVChannel_1"
+		Custom split normals with tangents being used
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  816
+		num uvs            :  408
+		num uvs2           :  0
+		num colors         :  816
+		num triangles      :  256
+	processing begun of mesh:  obj_espada_001
+		mesh is an instance of :  obj_espada.  Processing halted.
+	processing begun of mesh:  obj_espada_002
+		mesh is an instance of :  obj_espada.  Processing halted.
+	processing begun of mesh:  obj_espada_003
+		mesh is an instance of :  obj_espada.  Processing halted.
+	processing begun of mesh:  obj_espada_004
+		mesh is an instance of :  obj_espada.  Processing halted.
+	processing begun of mesh:  obj_espada_005
+		mesh is an instance of :  obj_espada.  Processing halted.
+	processing begun of mesh:  obj_espada_006
+		mesh is an instance of :  obj_espada.  Processing halted.
+	processing begun of mesh:  obj_espada_007
+		mesh is an instance of :  obj_espada.  Processing halted.
+	processing begun of mesh:  obj_espada_008
+		processing begun of material:  m_espada
+		registered as also a user of material:  m_espada
+		Custom split normals with tangents being used
+		num positions      :  204
+		num normals        :  204
+		num tangents       :  816
+		num uvs            :  408
+		num uvs2           :  408
+		num colors         :  816
+		num triangles      :  256
+	processing begun of mesh:  obj_espada_009
+		mesh is an instance of :  obj_espada_008.  Processing halted.
+	processing begun of mesh:  obj_espada_010
+		mesh is an instance of :  obj_espada_008.  Processing halted.
+	processing begun of mesh:  obj_espada_011
+		mesh is an instance of :  obj_espada_008.  Processing halted.
+	processing begun of mesh:  obj_espada_012
+		mesh is an instance of :  obj_espada_008.  Processing halted.
+	processing begun of mesh:  obj_espada_013
+		mesh is an instance of :  obj_espada_008.  Processing halted.
+	processing begun of mesh:  obj_espada_014
+		mesh is an instance of :  obj_espada_008.  Processing halted.
+	processing begun of mesh:  obj_espada_015
+		mesh is an instance of :  obj_espada_008.  Processing halted.
+	processing begun of mesh:  obj_paper1
+		processing begun of material:  zm_paper02
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_paper1_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_paper1_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: NORMAL, mapped using: BakingUV
+			processing texture obj_paper1_baked_NORMAL
+				texture type:  bumpTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 9.7661 secs
+		num positions      :  8
+		num normals        :  8
+		num tangents       :  0
+		num uvs            :  16
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  4
+	processing begun of mesh:  obj_paper2
+		mesh is an instance of :  obj_paper1.  Processing halted.
+	processing begun of mesh:  obj_paper3
+		mesh is an instance of :  obj_paper1.  Processing halted.
+	processing begun of mesh:  obj_paper4
+		mesh is an instance of :  obj_paper1.  Processing halted.
+	processing begun of mesh:  obj_paper5
+		processing begun of material:  zm_paper
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_paper5_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_paper5_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: NORMAL, mapped using: BakingUV
+			processing texture obj_paper5_baked_NORMAL
+				texture type:  bumpTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 3.3397 secs
+		num positions      :  39
+		num normals        :  39
+		num tangents       :  0
+		num uvs            :  78
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  30
+	processing begun of mesh:  obj_paper6
+		mesh is an instance of :  obj_paper5.  Processing halted.
+	processing begun of mesh:  obj_vaso1
+		processing begun of material:  zm_wood
+			WARNING: unsupported node type(ShaderNodeMixRGB) will trigger baking
+			WARNING: Metal channel baking required, but not possible, ignored
+			WARNING: Roughness channel baking required, but not possible, ignored
+			WARNING: Refraction channel baking required, but not possible, ignored
+			Baking texture, type: DIFFUSE, mapped using: BakingUV
+			processing texture obj_vaso1_baked_DIFFUSE
+				texture type:  diffuseTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			Baking texture, type: GLOSSY, mapped using: BakingUV
+			processing texture obj_vaso1_baked_GLOSSY
+				texture type:  specularTexture, mapped using: "BakingUV"
+					WARNING: Texture is not mapped as UV or UV2, assigned 1
+			bake time:  0 min, 5.057 secs
+		num positions      :  69
+		num normals        :  69
+		num tangents       :  0
+		num uvs            :  138
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  28
+========= Writing of JSON file started =========
+	writing mesh:  art_botao
+	writing mesh:  art_link
+	writing mesh:  art_linkseta
+	writing mesh:  art_logo11
+	writing mesh:  art_telao
+	writing mesh:  art_telaoseta
+	writing mesh:  col_telao
+	writing mesh:  col_link
+	writing mesh:  col_porta
+	writing mesh:  obj_hdri
+	writing mesh:  col_piso
+	writing mesh:  col_parede
+	writing mesh:  tel_iniciosala
+	writing mesh:  obj_cortina02
+	writing mesh:  obj_laptop
+	writing mesh:  obj_luz01
+	writing mesh:  obj_luz02
+	writing mesh:  obj_mesa
+	writing mesh:  obj_mesasuporte
+	writing mesh:  obj_janela
+	writing mesh:  obj_placaporta
+	writing mesh:  obj_placasletra
+	writing mesh:  obj_projetor
+	writing mesh:  obj_quadro01
+	writing mesh:  obj_quadro02
+	writing mesh:  obj_quadro03
+	writing mesh:  obj_quadro04
+	writing mesh:  obj_sofabase1
+	writing mesh:  obj_sofabase2
+	writing mesh:  obj_telaoest
+	writing mesh:  obj_vaso
+	writing mesh:  obj_vaso02
+	writing mesh:  obj_xicara01
+	writing mesh:  obj_batentemadeira
+	writing mesh:  obj_piso
+	writing mesh:  obj_forrosala
+	writing mesh:  obj_livros
+	writing mesh:  obj_lousa
+	writing mesh:  obj_mesaapoio
+	writing mesh:  obj_mesaapoio_001
+	writing mesh:  obj_mesacanto
+	writing mesh:  obj_painel
+	writing mesh:  obj_paredes
+	writing mesh:  obj_portamadeira
+	writing mesh:  obj_prateleira
+	writing mesh:  obj_rodape
+	writing mesh:  obj_sofa1
+	writing mesh:  obj_sofa2
+	writing mesh:  obj_tapete1
+	writing mesh:  obj_tapete2
+	writing mesh:  obj_tapete3
+	writing mesh:  obj_metais
+	writing mesh:  obj_mesacantometal
+	writing mesh:  obj_cadeira01
+	writing mesh:  obj_cadeiracoorporativa
+	writing mesh:  obj_espada
+	writing mesh:  obj_espada_008
+	writing mesh:  obj_paper1
+	writing mesh:  obj_paper5
+	writing mesh:  obj_vaso1
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  2 min, 41.9834 secs

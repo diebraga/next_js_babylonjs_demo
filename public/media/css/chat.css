@@ -1,0 +1,829 @@
+body{
+	background-color: #ccc;
+}
+.box-chat{
+    box-sizing: content-box;
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: none;
+    height: auto;
+}
+.content-chat{
+	background-color: #fff;
+    width: 320px;
+/*    position: fixed;*/
+   
+    margin: 20px;
+    border-radius: 10px;
+}
+.cont-limit-play{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu-chat {
+    width: 100%;
+    display: table;
+    border-radius: 10px 10px 0 0;
+    background-color: #f1f1f1;
+}
+.tabs-chat{
+	width: 92%;
+    padding: 4% 4% 0;
+    display: none;
+    box-sizing: content-box;
+}
+.tab-active{
+	display: table !important;
+}
+.bt-menu-chat{
+    width: 42%;
+    position: relative;
+    float: left;
+    padding: 13px 4%;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-sizing: content-box;
+}
+.bt-menu-chat ion-icon{
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+.bt-menu-chat span{
+	width: auto;
+	display: table;
+	position: relative;
+	margin: auto;
+}
+.bt-menu-chat span span{
+	margin-top: 0px;
+    position: relative;
+    display: table;
+    float: left;
+}
+.menu-chat .bt-menu-chat:nth-child(1){
+	width: 30%;
+}	
+.menu-chat .bt-menu-chat:nth-child(2){
+	width: 54%;
+    float: right;
+}	
+.menu-chat .active{
+	background-color: #1b63df;
+	color: #fff;
+}
+.menu-chat .active:hover{
+	background-color: #1052c5;
+}
+.menu-tab-chat{
+    width: auto;
+    border-radius: 20px;
+    border: 1px solid #dcdcdc;
+    position: relative;
+    display: table;
+    margin: auto;
+}
+.menu-tab-chat div{
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px 20px;
+	float: left;
+	display: table;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+    box-sizing: content-box;
+} 
+.menu-tab-chat div:first-child{
+	/*border-right: 1px solid #dcdcdc;*/
+}
+.menu-tab-chat .active{
+	background-color: #dcdcdc;
+	cursor: default;
+	border-radius: 20px;
+}
+.content-tab-chat{
+    border-top: 1px solid #f1f1f1;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    display: none;
+}
+.mensage-chat{
+    width: 92%;
+    display: none;
+    position: relative;
+    padding: 15px 4%;
+    background-color: #efefef;
+    border-radius: 0 0 10px 10px;
+    box-sizing: content-box;
+}
+.mensage-chat textarea{  
+   display: block;
+   position: relative;
+   box-sizing: padding-box;
+   overflow: hidden;
+   width: 88%;
+   float: left;
+   font-size: 13px;
+   border-radius: 6px;
+   border: 0;
+   resize: none;
+   outline: none;
+   padding: 0;
+   background-color: transparent;
+   box-sizing: content-box;
+}
+
+
+.mensage-chat textarea::-webkit-scrollbar {
+    background-color:#f1f1f1;
+    width:16px;
+}
+
+/* background of the scrollbar except button or resizer */
+.mensage-chat textarea::-webkit-scrollbar-track {
+    background-color:#f1f1f1
+}
+.mensage-chat textarea::-webkit-scrollbar-track:hover {
+    background-color:#f4f4f4
+}
+
+/* scrollbar itself */
+.mensage-chat textarea::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    border-radius:16px;
+    border:5px solid #f1f1f1
+}
+.mensage-chat textarea::-webkit-scrollbar-thumb:hover {
+    background-color:#a0a0a5;
+    border:4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+.mensage-chat textarea::-webkit-scrollbar-button {display:none}
+
+.bt-envia-mensage{
+    float: right;
+    display: block;
+    position: relative;
+    width: 10%;
+    background-image: url(../img/bt-submit.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: right center;
+    height: 35px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.mensage-client{
+	width: 100%;
+	display: table;
+	padding: 10px 0;
+    box-sizing: content-box;
+}
+.mensage-client .avatar{
+	width: 40px;
+	height: 40px;
+	background-color: #dcdcdc;
+	border-radius: 50%;
+	float: left;
+	display: table;
+	background-image: url(../img/avatar-u.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mensage-client .box-mensage-chat{
+	width: 80%;
+	display: table;
+	position: relative;
+	float: right;
+}
+.mensage-privat  .box-mensage-chat{
+    width: 100%;
+}
+.mensage-client .box-mensage-chat .data-user{
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+.user-me  .avatar{
+	float: right !important;
+}
+.user-me .box-mensage-chat{
+	float: left !important;
+}
+.user-me .box-mensage-chat .data-user span{
+	float: right !important;
+}
+.user-me .box-mensage-chat .data-user .bol-sep{
+	float: right !important;
+}
+.user-me .box-mensage-chat .mensage-client-user{
+	float: right !important;
+	border-radius: 15px 0px 15px 15px !important;
+}
+.mensage-client .box-mensage-chat .data-user .name{
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    display: table;
+    position: relative;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.mensage-client .box-mensage-chat .data-user .name:hover{
+	color: #1052c5;
+}
+.mensage-client .box-mensage-chat .data-user .company{
+	font-size: 11px;
+    font-weight: 500;
+    color: #1b63df;
+    float: left;
+    display: table;
+    position: relative;
+}
+.mensage-client .box-mensage-chat .data-user .hours{
+	font-size: 12px;
+    color: #ccc;
+     float: left;
+    display: table;
+    position: relative;
+}
+
+.bol-sep{
+    background-color: #ccc;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    float: left;
+    display: table;
+    margin: 8px;
+}
+
+.mensage-client .box-mensage-chat .mensage-client-user{
+    font-size: 13px;
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 6px 10px;
+    border-radius: 0px 15px 15px 15px;
+    width: auto;
+    margin: 5px 0;
+    max-width: 200px;
+    word-wrap: break-word;
+    display: table;
+    box-sizing: content-box;
+}
+.mensage-privat .box-mensage-chat .mensage-client-user{
+    max-width: 230px;
+    min-width: 70px;
+}
+.mensage-client .box-mensage-chat .mensage-client-user p{
+	max-width: 200px;
+	word-wrap: break-word !important;
+	margin: 4px 2px;
+}
+.mensage-client .box-mensage-chat .mensage-client-user span{
+    font-size: 10px;
+    color: #9E9E9E;
+    float: left;
+    display: table;
+    position: relative;
+    margin: 2px 2px 4px;
+}
+.mensage-privat .box-mensage-chat .mensage-client-user span{
+    font-size: 10px;
+    color: #9E9E9E;
+    float: left;
+    display: table;
+    position: relative;
+}
+.user-me .box-mensage-chat .mensage-client-user span{
+    float: right;
+}
+
+.box-tab-chat {
+    width: 100%;
+    height: 250px;
+    padding: 15px 0 0;
+    overflow-y: auto;
+    padding-right: 3%;
+    box-sizing: content-box;
+}
+
+.box-scroll::-webkit-scrollbar {
+    background-color:#fff;
+    width:16px;
+    margin-left: 4%;
+}
+
+/* background of the scrollbar except button or resizer */
+.box-scroll::-webkit-scrollbar-track {
+    background-color:#fff
+}
+.box-scroll::-webkit-scrollbar-track:hover {
+    background-color:#f4f4f4
+}
+
+/* scrollbar itself */
+.box-scroll::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    border-radius:16px;
+    border:5px solid #fff
+}
+.box-scroll::-webkit-scrollbar-thumb:hover {
+    background-color:#a0a0a5;
+    border:4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+.box-scroll::-webkit-scrollbar-button {display:none}
+.new-message{
+	font-size: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -15px;
+    color: #1b63df;
+    cursor: pointer;
+    z-index: 99;
+    animation: MoveUpDown 1s linear infinite;
+    display: none;
+}
+.new-message span{
+    background-color: #fff;
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    border-radius: 50%;
+}
+.new-message ion-icon{
+	z-index: 2;
+	position: relative;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: -5px;
+  }
+  50% {
+    bottom: 5px;
+  }
+}
+
+.list-conversas, .list-pessoas{
+	width: 100%;
+    height: 315px;
+    overflow-y: auto;
+    padding-right: 3%;
+    padding-bottom: 15px;
+}
+.list-conversas{
+	display: table;
+}
+.li-conversa{
+    width: 100%;
+    display: table;
+    padding: 15px 0;
+    position: relative;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.li-conversa:hover .data-user .li-data-user .name{
+    font-weight: 700;
+}
+.li-conversa::after{
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid #efefef;
+    width: 40px;
+    margin: auto;
+}
+.li-conversa:last-child::after{
+	border-top: 1px solid #fff;
+}
+.li-conversa .avatar{
+	width: 25px;
+    height: 25px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    float: left;
+    display: table;
+    background-image: url(../img/avatar-u.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.li-conversa .data-user{
+	width: 70%;
+	margin-left: 5%;
+    display: table;
+    position: relative;
+    float: left;
+}
+.li-conversa .data-user .li-data-user{
+	width: 100%;
+    display: table;
+    position: relative;
+}
+
+.li-conversa .data-user .li-data-user .name {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    display: table;
+    position: relative;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.li-conversa .data-user .li-data-user .company {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1b63df;
+    float: left;
+    display: table;
+    position: relative;
+}
+.li-conversa .data-user .company {
+    font-size: 14px;
+}
+.num-mensage{
+    display: table;
+    position: absolute;
+    width: 10%;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.num-mensage div{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num-mensage div span{
+    font-size: 13px;
+    margin-top: -3px;
+}
+.dados-user-chat-p{
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    display: table;
+    margin: auto;
+    padding-top: 5px;
+}
+
+
+.dados-user-chat-p .avatar{
+    width: 40px;
+    height: 40px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    float: left;
+    display: table;
+    background-image: url(../img/avatar-u.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dados-user-chat-p .avatar:before{
+    content: " ";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2px;
+    left: 26px;
+    border: 3px solid #fff;
+}
+.avatar-online:before{
+    background-color: #5cc460 !important;
+}
+.avatar-offline:before{
+    background-color: #9E9E9E !important;
+}
+.dados-user-chat-p .data-user{
+    width: 70%;
+    margin-left: 5%;
+    display: table;
+    position: relative;
+    float: left;
+}
+.dados-user-chat-p .data-user .li-data-user{
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+.dados-user-chat-p .data-user .li-data-user .name {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: table;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.dados-user-chat-p .data-user .li-data-user .position {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1b63df;
+    float: left;
+    display: table;
+    position: relative;
+}
+.dados-user-chat-p .data-user .company {
+    font-size: 12px;
+    color: #195aca;
+    font-weight: 700;
+}
+.active{
+    display: table;
+}
+#renderCanvas {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+}
+
+.canvas-jogo{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+}
+.modal-overlay{
+    z-index: 3;
+}
+.bt-like-mensage{
+    margin-top: -10px;
+    width: auto;
+    position: relative;
+    background-color: #dcdcdc;
+    display: table;
+    padding: 5px;
+    border-radius: 20px;
+}
+.bt-like-mensage i{
+    padding: 6px;
+    background-color: #8b8b8b;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 12px;
+    position: relative;
+    float: left;
+}
+.bt-like-mensage .total-like{
+    float: left;
+    display: table;
+    padding: 0px 5px;
+    font-size: 16px;
+}
+#box-tab-chat-quest .mensage-client .box-mensage-chat .mensage-client-user p{
+    max-width: 160px;
+}
+.bt-like-mensage i:hover{
+    background-color: #1386e2;
+}
+.like-active i{
+    background-color: #1386e2 !important;
+}
+.not-people{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.not-people ion-icon{
+    font-size: 30px;
+}
+.header-box-chat{
+    background-color: #195aca;
+    width: 100%;
+    height: 26px;
+    border-radius: 10px 10px 0 0;
+    cursor: grab;
+}
+.minus-chat{
+    outline: none !important;
+    background-color: transparent;
+    border: 0;
+    float: right;
+    display: table;
+    padding: 1px 15px;
+}
+.minus-chat i{    
+    font-size: 18px;
+    color: #fff;
+}
+.bt-chat-open{
+    position: fixed;
+    background-color: #1b63df;
+    color: #fff;
+    padding: 10px 20px 8px;
+    border-radius: 40px;
+    font-size: 18px;
+    margin: 20px;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+    font-weight: 600;
+    fill: #fff;
+    display: block;
+}
+.bt-chat-open ion-icon .icon-inner svg{
+    fill: #fff;
+}
+.box-modal-p{
+  background-color: rgb(0 0 0 / 80%);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.content-modal-p{
+    width: 1000px;
+    height: 560px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+/*    margin-left: 100px;*/
+    margin-top: -280px;
+    border-radius: 10px;
+}
+.bt-close-modal-p{
+    position: absolute;
+    right: 0;
+    top: -40px;
+    cursor: pointer;
+    z-index: 1;
+/*    margin: 20px 15px;*/
+}
+.bt-close-modal-p i{
+   /* background-color: rgb(255 255 255 / 70%);*/
+    color: #fff;
+   /* padding: 6.5px 8px;*/
+    font-size: 25px;
+    cursor: pointer;
+/*    border-radius: 50%;*/
+}
+/*.bt-close-modal-p i:hover{
+    background-color: rgb(255 255 255 / 50%);
+    color: #000;
+}*/
+.bt-min-modal-p{
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bt-min-modal-p i{
+    cursor: pointer;
+}
+/*.bt-min-modal-p i:hover{
+    background-color: rgb(255 255 255 / 50%);
+    color: #000;
+}*/
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.active .modal{
+    display: table;
+}
+.modal-content{
+    height: 100%;
+}
+.modal-content iframe{
+    position: relative !important;
+}
+.modal .close-modal {
+    z-index: 2;
+}
+.fixed-text{
+    width: 100%;
+    background-color: #d5ebff;
+    border-radius: 10px;
+    padding: 15px 20px 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fixed-text p{
+    font-size: 12px;
+    margin: 0;
+    color: #0142b1;
+    font-weight: 600;
+}
+.fixed-text-danger{
+    background-color: #ffd9d9;
+}
+.fixed-text-danger p{
+    color: #7e0900;
+}
+.line-fixed{
+    background-color: #f1f1f1;
+    width: 100%;
+    position: absolute;
+    display: table;
+    height: 1px;
+    left: 0;
+    margin-top: 31px;
+}
+.control-min{
+    display: none;
+}
+.lds-ring {
+    display: table;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    margin: 20px auto;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    border: 4px solid #195aca;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #195aca transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.modal-content{
+    position: absolute;
+}

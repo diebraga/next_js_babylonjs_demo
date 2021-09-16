@@ -1,0 +1,98 @@
+.box-video-mini{
+	background-color: #000;
+	border-radius: 10px;
+	width: 320px;
+	height: 180px;
+	position: fixed;
+	bottom:  0;
+	left: 0;
+    top: auto;
+	z-index: 5;
+	margin: 20px;
+	display: none;
+}
+.box-video-mini iframe{
+	width: 100%;
+	border-radius: 10px;
+	position: relative;
+}
+.bt-max-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14px 8px;
+    z-index: 1;
+    cursor: pointer;
+}
+.bt-max-video i.icofont-maximize {
+	background-color: rgb(0 0 0 / 80%);
+    color: #fff;
+   	padding: 6px 7px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.bt-drag-video{
+	position: absolute;
+    left: 45px;
+    margin: 14px 8px;
+    z-index: 1;
+}
+
+.bt-drag-video i{
+	background-color: rgb(0 0 0 / 80%);
+    color: #fff;
+    padding: 6px 7px;
+    font-size: 24px;
+    cursor: grab;
+    border-radius: 5px;
+}
+.bt-close-video{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+    margin: 14px 8px;
+}
+.bt-close-video i{
+    background-color: rgb(0 0 0 / 80%);
+    color: #fff;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.bt-control-video i:hover{
+	background-color: rgb(255 255 255 / 70%);
+    color: #000;
+}
+.box-content-modal-p{
+	width: 100%;
+    height: 100%;
+	display: table;
+	position: relative;
+	border-radius: 10px;
+}
+.box-content-modal-p iframe{
+	border-radius: 10px;
+}
+
+/* min-width */
+@media screen and (max-width: 1450px) {
+    .content-modal-p {
+        width: 54%;
+        width: calc(100% - 490px); /* para suporte nativo */
+    }
+}
+
+@media (max-height: 700px) {
+    .content-modal-p {
+        height: 70%;
+        top: 0%;
+        margin-top: 5%;
+    }
+    .box-content-modal-p iframe{
+        height: 100%;
+    }
+}

@@ -1,0 +1,269 @@
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+canvas {
+  touch-action: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px #ededed inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: #1c1c1c !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(//db.onlinewebfonts.com/c/05c2c6630ebb447b301f8c0278299ca5?family=Nimbus+Sans+L);
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px #EDEDED inset !important;
+ color: #1c1c1c;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: #1C1C1C !important;
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #192229;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  position: absolute; 
+  top: 40%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;     
+  -ms-user-select: none;  
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loadingScreen {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #192229;
+  font-size: 50px;
+  text-align: center;
+  background-color: #F7F7F7;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  -webkit-user-select: none; 
+  -moz-user-select: none;     
+  -ms-user-select: none;
+}
+
+#loadingScreen img {
+  width: 600px;
+  height: 468.75px;
+}
+
+#loadingScreen p {
+  margin: 0;
+ font-family: 'MuseoModerno', cursive;
+  font-size: 32px;
+  -webkit-user-select: none; 
+  -moz-user-select: none;     
+  -ms-user-select: none;
+
+}
+
+.animate-fading {
+  animation:fading 4s infinite
+}
+
+@keyframes fading {
+  0% {
+    opacity:0
+  }
+  50% {
+    opacity:1
+  }
+  100% {
+    opacity:0
+  }
+}
+
+@media only screen and (min-width: 1004px) {
+  .messages {
+    width: 60%;
+    left: 20%;
+  }
+
+  #loadingScreen img {
+    width: 559.57px;
+    height: 442.12px;
+  }
+}
+
+@media only screen and (min-width: 1346px) {
+  .messages {
+    width: 48%;
+    left: 26%;
+  }
+
+  #loadingScreen img {
+    width: 559.57px;
+    height: 442.12px;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .messages {
+    width: 50%;
+    left: 25%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .messages {
+    width: 34%;
+    left: 33%;
+  }
+}
+
+.menu{
+  left: 0;
+  width: 4%;
+  min-width: 60px;
+  height: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  position: absolute;
+  margin: 0;
+  opacity: 0.98;
+}
+     .imenu{
+       font-size:18px;
+       color: #1c1c1c;
+     }
+     .ilogo{
+      font-size:18px;
+      color: #1c1c1c;
+     }
+
+     .logo-menu-box{
+       text-align: center;
+       bottom: 20px;
+       left: 0;
+       width: 100%;
+       min-width: 60px;
+       position: absolute;
+     }
+
+
+.closemenu{
+      margin-top: 15%;
+      text-align: center;
+      position: relative;
+      width: 100%;
+}
+
+
+.icon-menu-inicio{
+  font-size: 22px;
+  background-image: linear-gradient(to top, #243949 25%, #517fa4 100%);
+  padding: 13px;
+  border-radius: 50px;
+}
+
+.list-item-menu{
+    width: 75%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 100;
+    background: #EDEDED;
+    border-radius: 30px;
+    text-align: right;
+    color: #585858;
+    z-index: -1;
+}
+
+
+.bg_card_schedule{
+
+  background-color: #F3F3F3;
+  border-radius: 20px;
+  color: #01396E;
+  box-shadow: 0px 1.5px 0px 0px #8a8a8a7d;
+}
+
+
+.button_card{
+  background-image: linear-gradient(to right, #01396E 0%, #E50B19 100%);
+  padding: 8px 15px;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 100;
+  margin-top:25%;
+}
+
+.text_card_schedule{
+  font-size: 15px; 
+  font-weight: 100;
+}
+
+.tittle_card_schedule{
+  font-size: 18px; 
+  font-weight: 100;
+}
+
+.header_schedule{
+  background-color: #114577;
+}
+
+.ml-6{
+  margin-left: 90%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .CamButton{
+    display: block;
+    visibility: hidden;
+  }
+}
+
