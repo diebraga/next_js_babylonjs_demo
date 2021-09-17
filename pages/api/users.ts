@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 
 // Fake users data
-import { users } from './_users_data'
+import prisma from '../../lib/prisma';
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  // Get data from your database
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  const users = await prisma.user.findMany()
   res.status(200).json(users)
 }

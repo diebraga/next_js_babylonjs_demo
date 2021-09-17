@@ -3,14 +3,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import ThemeToggle from '../components/ThemeToggle'
 import * as JSONplaceholderController from '../controllers/users'
-import axios from 'axios'
-import { mutate } from 'swr'
-import { useCallback } from 'react'
+import { useSession, signIn, signOut } from "next-auth/client"
 
 export default function Users() {
-  const { users } = JSONplaceholderController.getUsers()
+  const [session, isLoading] = useSession()
 
-  const { user } = JSONplaceholderController.getPostById('2')
+  const { users } = JSONplaceholderController.getUsers()
 
   return (
     <>
@@ -23,6 +21,19 @@ export default function Users() {
         <Box position='absolute' right='2' top='2'>
           <ThemeToggle />
         </Box>
+        {!session && <>
+        Not signed in <br/>
+        <Button onClick={(): Promise<void> => signIn('github')}>
+          Sign in
+        </Button>
+      </>}
+      {session && <>
+        Signed in as {session.user.email} <br/>
+        <Button onClick={(): Promise<void> => signOut()}>
+          Sign out
+        </Button>
+      </>}
+
         <Box>
           <VStack alignItems='flex-start'>
             <Link href='/demo'>

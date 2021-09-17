@@ -7,10 +7,12 @@ import { SWRConfig } from 'swr'
 import { AuthProvider } from '../contexts/useAuth';
 import { MusicProvider } from '../contexts/useMusic';
 import { fetcher } from '../utils/swrFetcher'
+import { Provider } from "next-auth/client"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme}> 
+    <Provider session={pageProps.session}>
       <SWRConfig value={{ fetcher }}>
         <AuthProvider>
           <SidebarDrawerProvider>
@@ -20,6 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </SidebarDrawerProvider>
         </AuthProvider>
       </SWRConfig>
+    </Provider>
     </ChakraProvider>
   )
 }

@@ -1,12 +1,13 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { users } from '../_users_data'
+import prisma from '../../../lib/prisma';
 
-export default function userHandler(req: NextApiRequest, res: NextApiResponse) {
+export default async function userHandler(req: NextApiRequest, res: NextApiResponse) {
   const {
     query: { id },
     method,
   } = req
 
+  const users = await prisma.user.findMany()
   const user = users.find((user) => user.id === Number(id))
 
   switch (method) {
