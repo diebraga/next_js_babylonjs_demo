@@ -11,11 +11,11 @@ export function getUsers() {
   } 
 }
 
-export function getPostById(id: string) {
-  const { data, error } = useSWR(`api/user/${id}`, { dedupingInterval: 80000 })
+export function getUserById(id: string) {
+  const { data, error } = useSWR(`api/users/${id}`)
   
   return {
-    user: data as usersModel[],
+    user: data as usersModel,
     isLoading: !error && !data,
     error,
   } 
