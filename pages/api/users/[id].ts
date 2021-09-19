@@ -9,6 +9,7 @@ export default async function userHandler(req: NextApiRequest, res: NextApiRespo
   } = req
 
   const session = await getSession({ req })
+  const { name } = req.body;
 
   if (session) {
     // Get all users
@@ -21,14 +22,17 @@ export default async function userHandler(req: NextApiRequest, res: NextApiRespo
         // Get data from your database
         res.status(200).json(user)
         break
-      // case 'PUT':
-      //   // Update data in your database
-      //   res.status(200).json(user)
-      //   break
-      // case 'DELETE':
-      //   // Create data in your database
-      //   res.status(200).json(`User ${user.name} deleted successfully!`)
-      //   break  
+      case 'PUT':
+        if (session.user.email === user.email) {
+          const userUpdated = await prisma.user.update({
+            where: { id: Number(id) },
+            data: {
+              name: name
+            },
+          });
+          res.status(200).json(userUpdated);
+        } else res.status(401).json({ error: 'You can only update yourself' });
+        break
       default:
         res.setHeader('Allow', ['GET'])
         res.status(405).end(`Method ${method} Not Allowed`)
