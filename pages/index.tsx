@@ -3,8 +3,6 @@ import Head from 'next/head'
 import MotionBox from '../components/MotionBox'
 import Link from 'next/link'
 import ThemeToggle from '../components/ThemeToggle'
-import * as JSONplaceholderController from '../controllers/users'
-import { useState } from 'react'
 
 export default function Home() {
   return (

@@ -12,6 +12,7 @@ model User {
   name          String?
   email         String?   @unique
   image         String?
+  emailVerified String?
   createdAt     DateTime  @default(now()) @map(name: "created_at")
   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
   @@map(name: "users")
@@ -47,4 +48,15 @@ model Session {
   updatedAt    DateTime @default(now()) @map(name: "updated_at")
 
   @@map(name: "sessions")
+}
+
+model VerificationRequest {
+  id         String   @id @default(cuid())
+  identifier String
+  token      String   @unique
+  expires    DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([identifier, token])
 }

@@ -2,13 +2,14 @@ import { Avatar, Box, Button, Flex, Heading, Link as ChakraLink, Text, VStack } 
 import Head from 'next/head'
 import Link from 'next/link'
 import ThemeToggle from '../components/ThemeToggle'
-import { getUsers, getUserById } from '../controllers/users'
+import { getUsers, getUserById } from '../hooks/users'
 import { useSession, signIn, signOut } from "next-auth/client"
 
 export default function Users() {
   const [session, isLoading] = useSession()
 
   const { users } = getUsers()
+  console.log(users)
 
   return (
     <>
@@ -26,7 +27,7 @@ export default function Users() {
         <Flex position='absolute' left='2' top='2'>
           {!session ? 
           <>
-            <Button onClick={(): Promise<void> => signIn('github')}>
+            <Button onClick={() => signIn()}>
               Sign in
             </Button>
             </>
@@ -63,7 +64,7 @@ export default function Users() {
                 return (
                   <Flex key={index}>
                     <Text as='h1'>
-                      {user.name}
+                      {user.email}
                     </Text>
                   </Flex>
                 )
