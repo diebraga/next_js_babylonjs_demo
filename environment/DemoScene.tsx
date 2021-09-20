@@ -21,12 +21,11 @@ import {
   Quaternion,
   Animation,
 } from "@babylonjs/core"
-import { useMusic } from '../contexts/useMusic'
 
 export default function DemoScene() {
   const [isLoading, setIsLoading] = useState(false)
   const [moveClick, setMoveClick] = useState(true)
-  const { pauseMusic } = useMusic()
+
   var canvas // drawing paper
   var engine // the pen - deal with the low level webgl
   var camera // camera
@@ -179,7 +178,6 @@ export default function DemoScene() {
         telao.actionManager = new ActionManager(scene)
         telao.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
           // id do video no youtube
-          pauseMusic()
         }))
         var logo01 = scene.getMeshByName("art_logo11");
         logo01.material = materiallogo1;

@@ -1,17 +1,41 @@
-import { Box, Flex, Heading, Link as ChakraLink, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Flex, FormLabel, Heading, Input, Link as ChakraLink, Text, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
 import { GetServerSideProps } from "next";
-import ThemeToggle from "../../components/ThemeToggle";
+import useSWR, { useSWRConfig } from 'swr'
 import { getUserById } from "../../hooks/users"
 import { useSession } from "next-auth/client"
+import { useForm, SubmitHandler } from 'react-hook-form'
+import { useState } from 'react';
 
 type UserProps = {
   id: string
 }
 
 export default function User({ id }: UserProps) {
+  const { register, handleSubmit, reset, formState: { isSubmitting } } = useForm();
+  const [isUpdating, setIsUpdating] = useState(false)
+  const { mutate } = useSWRConfig()
+
   const [session, isLoading] = useSession()
   const { user } = getUserById(id)
+
+  type FormData = {
+    name: string
+  }
+
+  const handleUpdate: SubmitHandler<FormData> = async (formData) => {  
+    mutate(`/api/users/${id}`, { ...user, name: formData.name }, false)
+    const response = await fetch(`/api/users/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    mutate(`/api/users/${id}`)
+    reset()
+    setIsUpdating(false)
+  }
 
   return (
     <>
@@ -30,6 +54,28 @@ export default function User({ id }: UserProps) {
                 <Text as='h1'>
                   Email: {user?.email}
                 </Text>
+                {session.user.email === user?.email && (
+                  <>
+                  {!isUpdating ? (
+                    <ChakraLink color='blue.500' onClick={() => setIsUpdating(true)}>
+                      Edit
+                    </ChakraLink>                  
+                  ) : (
+                    <>
+                    <ChakraLink color='red.400' onClick={() => setIsUpdating(false)}>
+                      Cancel
+                    </ChakraLink>
+                    <form onSubmit={handleSubmit(handleUpdate)}>
+                      <FormLabel>
+                        Name
+                        <Input mt='1' {...register('name', {required: true})} defaultValue={user?.name}/>
+                        <Button mt='2' isLoading={isSubmitting} type='submit'>Submit</Button>
+                      </FormLabel>
+                    </form>
+                    </>
+                  )}
+                  </>
+                )}
               </VStack>
           </>}
         </Box>

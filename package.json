@@ -36,7 +36,7 @@
     "react": "^17.0.2",
     "react-babylonjs": "2.3.2",
     "react-dom": "^17.0.2",
-    "react-hook-form": "^7.15.3",
+    "react-hook-form": "^7.15.4",
     "react-icons": "^4.2.0",
     "react-modal-video": "^1.2.6",
     "react-no-ssr": "^1.1.0",

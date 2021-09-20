@@ -11,19 +11,6 @@ export default function Users() {
 
   const { users } = getUsers()
 
-  async function updateUser(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const response = await fetch('/api/users/6', {
-      method: 'PUT',
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: 'Diego Braga'
-      })
-    })
-    const data = await response.json()
-    console.log(data)
-  }
-
   return (
     <>
       <Head>
@@ -70,9 +57,6 @@ export default function Users() {
                 Home
               </ChakraLink>
             </Link>
-            <form onSubmit={updateUser}>
-              <Button type='submit'>Submit</Button>
-            </form>
             {!session && <Heading mb='40px' fontSize='40px'>Signin to see users</Heading>}
             {session && <>
               <Heading mb='40px' fontSize='40px'>Users</Heading>
