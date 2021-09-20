@@ -1,15 +1,28 @@
 import { Avatar, Box, Button, Flex, Heading, Link as ChakraLink, Text, VStack } from '@chakra-ui/react'
 import Head from 'next/head'
 import Link from 'next/link'
-import ThemeToggle from '../components/ThemeToggle'
-import { getUsers, getUserById } from '../hooks/users'
+import ThemeToggle from '../../components/ThemeToggle'
+import { getUsers } from '../../hooks/users'
 import { useSession, signIn, signOut } from "next-auth/client"
+import { FormEvent } from 'react'
 
 export default function Users() {
   const [session, isLoading] = useSession()
 
   const { users } = getUsers()
-  console.log(users)
+
+  async function updateUser(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    const response = await fetch('/api/users/6', {
+      method: 'PUT',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: 'Diego Braga'
+      })
+    })
+    const data = await response.json()
+    console.log(data)
+  }
 
   return (
     <>
@@ -57,15 +70,23 @@ export default function Users() {
                 Home
               </ChakraLink>
             </Link>
+            <form onSubmit={updateUser}>
+              <Button type='submit'>Submit</Button>
+            </form>
             {!session && <Heading mb='40px' fontSize='40px'>Signin to see users</Heading>}
             {session && <>
               <Heading mb='40px' fontSize='40px'>Users</Heading>
               {users?.map((user, index) => {          
                 return (
                   <Flex key={index}>
-                    <Text as='h1'>
+                    <Text as='h1' mr='4'>
                       {user.email}
                     </Text>
+                    <Link href={`/users/${user.id}`}>
+                      <ChakraLink>
+                        See details
+                      </ChakraLink>
+                    </Link>
                   </Flex>
                 )
               })}

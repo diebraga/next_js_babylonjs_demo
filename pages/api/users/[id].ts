@@ -13,9 +13,9 @@ export default async function userHandler(req: NextApiRequest, res: NextApiRespo
 
   if (session) {
     // Get all users
-    const users = await prisma.user.findMany()
-    // Match user that has id equals to param
-    const user = users.find((user) => user.id === Number(id))
+    const user = await prisma.user.findUnique({
+      where: { id: Number(id) }
+    })
 
     switch (method) {
       case 'GET':
@@ -34,7 +34,7 @@ export default async function userHandler(req: NextApiRequest, res: NextApiRespo
         } else res.status(401).json({ error: 'You can only update yourself' });
         break
       default:
-        res.setHeader('Allow', ['GET'])
+        res.setHeader('Allow', ['GET', ])
         res.status(405).end(`Method ${method} Not Allowed`)
     }
   } else res.status(401).json({
