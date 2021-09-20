@@ -1,7 +1,7 @@
 import { Box, Button, Flex, FormLabel, Heading, Input, Link as ChakraLink, Text, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
 import { GetServerSideProps } from "next";
-import useSWR, { useSWRConfig } from 'swr'
+import { useSWRConfig } from 'swr'
 import { getUserById } from "../../hooks/users"
 import { useSession } from "next-auth/client"
 import { useForm, SubmitHandler } from 'react-hook-form'
@@ -43,8 +43,27 @@ export default function User({ id }: UserProps) {
         <Box>
           {!session && <Heading mb='40px' fontSize='40px'>Signin to see details</Heading>}
           {session && <>
-            <Heading mb='40px' fontSize='40px'>User</Heading>
-              <VStack alignItems='flex-start'>
+            <VStack alignItems='flex-start'>
+              <Link href='/demo'>
+              <ChakraLink color='blue.500'>
+                See Scene demo
+              </ChakraLink>
+            </Link>
+
+            <Link href='/'>
+              <ChakraLink color='blue.500'>
+                Home
+              </ChakraLink>
+            </Link>
+
+            <Link href='/users'>
+              <ChakraLink color='blue.500'>
+                Users
+              </ChakraLink>
+            </Link>
+
+              <Heading mb='40px' fontSize='40px'>User</Heading>
+
                 <Text as='h1'>
                   ID: {user?.id}
                 </Text>

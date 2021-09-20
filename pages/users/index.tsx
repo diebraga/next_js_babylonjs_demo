@@ -20,29 +20,6 @@ export default function Users() {
       </Head>
 
       <Flex w='100vw' h='100vh' align='center' justify='center'>
-        <Box position='absolute' right='2' top='2'>
-          <ThemeToggle />
-        </Box>
-
-        <Flex position='absolute' left='2' top='2'>
-          {!session ? 
-          <>
-            <Button onClick={() => signIn()}>
-              Sign in
-            </Button>
-            </>
-            : 
-            <>
-            <Avatar name={session.user.name} src={session.user.image} size='md'/>
-            <Box ml='5'>
-              <Text>{session.user.email}</Text>
-              <Button onClick={(): Promise<void> => signOut()}>
-                Sign out
-              </Button>
-            </Box>
-          </>}
-
-        </Flex>
         <Box>
 
           <VStack alignItems='flex-start'>
@@ -67,7 +44,7 @@ export default function Users() {
                       {user.email}
                     </Text>
                     <Link href={`/users/${user.id}`}>
-                      <ChakraLink>
+                      <ChakraLink color='blue.500'>
                         See details
                       </ChakraLink>
                     </Link>

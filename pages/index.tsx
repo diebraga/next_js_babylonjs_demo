@@ -13,9 +13,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Flex w='100vw' h='100vh' align='center' justify='center'>
-        <Box position='absolute' right='2' top='2'>
-          <ThemeToggle />
-        </Box>
         <Box>
           <VStack alignItems='flex-start'>
             <Link href='/demo'>
@@ -37,7 +34,7 @@ export default function Home() {
             maxWidth={[280, 400]}
             marginX="auto"          
           >
-            <Heading mb='40px' fontSize='40px'>Kosmos Starter</Heading>
+            <Heading mb='40px' fontSize='40px'>BabylonJS Next-Auth Starter</Heading>
               <Box textAlign='center' fontSize='70px'>
                 🚀
               </Box>
