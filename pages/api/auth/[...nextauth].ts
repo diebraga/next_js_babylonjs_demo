@@ -36,7 +36,7 @@ const options = {
     encryption: true
   },
 
-  debug: true,
+  debug: Boolean(process.env.DEBUG),
   adapter: Adapters.Prisma.Adapter({ prisma }),
   secret: process.env.SECRET,
 };
