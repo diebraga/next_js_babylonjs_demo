@@ -1,5 +1,6 @@
 import { useDisclosure } from '@chakra-ui/react'
 import { createContext, Dispatch, ReactNode, useContext, useState } from 'react'
+import ScreenVideo from '../components/ScreenVideo'
 
 interface ModalProviderProp {
   children: ReactNode
@@ -32,7 +33,7 @@ export function ModalProvider({ children }: ModalProviderProp) {
   function openVideoScreen() {
     onOpen()
     setModalTitle(null)
-    setModalBody('')
+    setModalBody(<ScreenVideo />)
     setModalMaxWidth('80%')
     setModalBackground('transparent')
   }
