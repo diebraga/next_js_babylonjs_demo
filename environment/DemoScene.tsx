@@ -21,10 +21,14 @@ import {
   Quaternion,
   Animation,
 } from "@babylonjs/core"
+import { useModal } from '../contexts/useModal'
 
 export default function DemoScene() {
   const [isLoading, setIsLoading] = useState(false)
   const [moveClick, setMoveClick] = useState(true)
+
+  const { openVideoScreen } = useModal()
+  
   var canvas // drawing paper
   var engine // the pen - deal with the low level webgl
   var camera // camera
@@ -177,10 +181,7 @@ export default function DemoScene() {
         telao.material = materialvideo;
         telao.actionManager = new ActionManager(scene)
         telao.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-          // id do video no youtube
-          // setVideoId(linkvideo)
-          // setVideoIsOpen(true)
-          // pauseMusic()
+          openVideoScreen()
         }))
         var logo01 = scene.getMeshByName("art_logo11");
         logo01.material = materiallogo1;
