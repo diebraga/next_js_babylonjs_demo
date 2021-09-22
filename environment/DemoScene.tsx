@@ -25,7 +25,6 @@ import {
 export default function DemoScene() {
   const [isLoading, setIsLoading] = useState(false)
   const [moveClick, setMoveClick] = useState(true)
-
   var canvas // drawing paper
   var engine // the pen - deal with the low level webgl
   var camera // camera
@@ -51,6 +50,7 @@ export default function DemoScene() {
     camera.keysRight.push(68);
     camera.position = new Vector3(1, 1.2, 0)//camera position
     camera.rotation = new Vector3(-0.0044657201001599145, 8.319440534657161, 0)//camera rotation
+    
     
     var camSphere = MeshBuilder.CreateSphere("sphere", { diameterY: 3, diameterX: 0.1 }, scene);
     camSphere.parent = camera;
@@ -152,32 +152,35 @@ export default function DemoScene() {
       window.location.href="/#"
       setIsLoading(true)  
       }));
+
         var materiallogo1= new StandardMaterial("materiallogo1", scene);
-        materiallogo1.diffuseTexture = new Texture(``, scene);
-        materiallogo1.emissiveTexture = new Texture(``, scene);
+        materiallogo1.diffuseTexture = new Texture(`/loader-1.gif`, scene);
+        materiallogo1.emissiveTexture = new Texture(`/loader-1.gif`, scene);
         materiallogo1.specularColor = new Color3(0, 0, 0);
         materiallogo1.freeze();
         var materiallogo2= new StandardMaterial("materiallogo2", scene);
-        materiallogo2.diffuseTexture = new Texture(``, scene);
-        materiallogo2.emissiveTexture = new Texture(``, scene);
+        materiallogo2.diffuseTexture = new Texture(`/loader-1.gif`, scene);
+        materiallogo2.emissiveTexture = new Texture(`/loader-1.gif`, scene);
         materiallogo2.specularColor = new Color3(0, 0, 0);
         materiallogo2.freeze();
         var materialweb= new StandardMaterial("materialweb", scene);
-        materialweb.diffuseTexture = new Texture(``, scene);
-        materialweb.emissiveTexture = new Texture(``, scene);
+        materialweb.diffuseTexture = new Texture(`/loader-1.gif`, scene);
+        materialweb.emissiveTexture = new Texture(`/loader-1.gif`, scene);
         materialweb.specularColor = new Color3(0, 0, 0);
         materialweb.freeze();
         var materialvideo= new StandardMaterial("materialvideo", scene);
-        materialvideo.diffuseTexture = new Texture(``, scene);
-        materialvideo.emissiveTexture = new Texture(``, scene);
+        materialvideo.diffuseTexture = new Texture(`/loader-1.gif`, scene);
+        materialvideo.emissiveTexture = new Texture(`/loader-1.gif`, scene);
         materialvideo.specularColor = new Color3(0, 0, 0);
         materialvideo.freeze();
         var telao = scene.getMeshByName("art_telao");
         telao.material = materialvideo;
-        const linkvideo = ``;
         telao.actionManager = new ActionManager(scene)
         telao.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
           // id do video no youtube
+          // setVideoId(linkvideo)
+          // setVideoIsOpen(true)
+          // pauseMusic()
         }))
         var logo01 = scene.getMeshByName("art_logo11");
         logo01.material = materiallogo1;
@@ -186,10 +189,9 @@ export default function DemoScene() {
 
         var web = scene.getMeshByName("art_link");
         web.material = materialweb;
-        const linkweb = ``;
         web.actionManager = new ActionManager(scene);
         web.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-        window.open(linkweb, "_blank");
+        window.open('', "_blank");
         }));
             
       
@@ -219,6 +221,12 @@ export default function DemoScene() {
           SceneOptimizerOptions.HighDegradationAllowed()
           console.log("Modo Mobile");
 /*           engine.setHardwareScalingLevel(1 / window.devicePixelRatio); */
+          scene.registerBeforeRender(
+            function() {
+              //INICIO FOR
+      
+             //FIM FOR 
+           });
         } else {
           scene.activeCamera = camera;
           camSphere.parent = camera;
