@@ -27,7 +27,7 @@ export default function DemoScene() {
   const [isLoading, setIsLoading] = useState(false)
   const [moveClick, setMoveClick] = useState(true)
 
-  const { openVideoScreen } = useModal()
+  const { openVideoScreen, openJukeBox } = useModal()
   
   var canvas // drawing paper
   var engine // the pen - deal with the low level webgl
@@ -158,8 +158,8 @@ export default function DemoScene() {
       }));
 
         var materiallogo1= new StandardMaterial("materiallogo1", scene);
-        materiallogo1.diffuseTexture = new Texture(`/screen.png`, scene);
-        materiallogo1.emissiveTexture = new Texture(`/screen.png`, scene);
+        materiallogo1.diffuseTexture = new Texture(`/jukebox.jpg`, scene);
+        materiallogo1.emissiveTexture = new Texture(`/jukebox.jpg`, scene);
         materiallogo1.specularColor = new Color3(0, 0, 0);
         materiallogo1.freeze();
         var materiallogo2= new StandardMaterial("materiallogo2", scene);
@@ -187,7 +187,7 @@ export default function DemoScene() {
         var leftLogo = scene.getMeshByName("art_logo11");
         leftLogo.actionManager = new ActionManager(scene)
         leftLogo.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-          alert('alert')
+          openJukeBox()
         }))
 
         var rightLogo = scene.getMeshByName("art_logo12");

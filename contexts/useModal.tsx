@@ -1,5 +1,6 @@
 import { useDisclosure } from '@chakra-ui/react'
 import { createContext, Dispatch, ReactNode, useContext, useState } from 'react'
+import JukeBox from '../components/JukeBox'
 import ScreenVideo from '../components/ScreenVideo'
 
 interface ModalProviderProp {
@@ -19,6 +20,7 @@ interface ModalContextProps {
   modalBackground: string
   setModalBackground: Dispatch<string>
   openVideoScreen: () => void
+  openJukeBox: () => void
 }
 
 export const ModalContext = createContext({} as ModalContextProps)
@@ -38,6 +40,14 @@ export function ModalProvider({ children }: ModalProviderProp) {
     setModalBackground('transparent')
   }
 
+  function openJukeBox() {
+    onOpen()
+    setModalTitle(null)
+    setModalBody(<JukeBox />)
+    setModalMaxWidth('80%')
+    setModalBackground('transparent')
+  }
+
   return(
     <ModalContext.Provider value={{
       isOpen,
@@ -51,7 +61,8 @@ export function ModalProvider({ children }: ModalProviderProp) {
       setModalMaxWidth,
       modalBackground,
       setModalBackground,
-      openVideoScreen
+      openVideoScreen,
+      openJukeBox
     }}>
       {children}
     </ModalContext.Provider>
