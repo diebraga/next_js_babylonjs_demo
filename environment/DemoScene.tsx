@@ -158,23 +158,23 @@ export default function DemoScene() {
       }));
 
         var materiallogo1= new StandardMaterial("materiallogo1", scene);
-        materiallogo1.diffuseTexture = new Texture(`/loader-1.gif`, scene);
-        materiallogo1.emissiveTexture = new Texture(`/loader-1.gif`, scene);
+        materiallogo1.diffuseTexture = new Texture(`/screen.png`, scene);
+        materiallogo1.emissiveTexture = new Texture(`/screen.png`, scene);
         materiallogo1.specularColor = new Color3(0, 0, 0);
         materiallogo1.freeze();
         var materiallogo2= new StandardMaterial("materiallogo2", scene);
-        materiallogo2.diffuseTexture = new Texture(`/loader-1.gif`, scene);
-        materiallogo2.emissiveTexture = new Texture(`/loader-1.gif`, scene);
+        materiallogo2.diffuseTexture = new Texture(`/screen.png`, scene);
+        materiallogo2.emissiveTexture = new Texture(`/screen.png`, scene);
         materiallogo2.specularColor = new Color3(0, 0, 0);
         materiallogo2.freeze();
         var materialweb= new StandardMaterial("materialweb", scene);
-        materialweb.diffuseTexture = new Texture(`/loader-1.gif`, scene);
-        materialweb.emissiveTexture = new Texture(`/loader-1.gif`, scene);
+        materialweb.diffuseTexture = new Texture(`/screen.png`, scene);
+        materialweb.emissiveTexture = new Texture(`/screen.png`, scene);
         materialweb.specularColor = new Color3(0, 0, 0);
         materialweb.freeze();
         var materialvideo= new StandardMaterial("materialvideo", scene);
-        materialvideo.diffuseTexture = new Texture(`/loader-1.gif`, scene);
-        materialvideo.emissiveTexture = new Texture(`/loader-1.gif`, scene);
+        materialvideo.diffuseTexture = new Texture(`/screen.png`, scene);
+        materialvideo.emissiveTexture = new Texture(`/screen.png`, scene);
         materialvideo.specularColor = new Color3(0, 0, 0);
         materialvideo.freeze();
         var telao = scene.getMeshByName("art_telao");
@@ -183,6 +183,19 @@ export default function DemoScene() {
         telao.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
           openVideoScreen()
         }))
+
+        var leftLogo = scene.getMeshByName("art_logo11");
+        leftLogo.actionManager = new ActionManager(scene)
+        leftLogo.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
+          alert('alert')
+        }))
+
+        var rightLogo = scene.getMeshByName("art_logo12");
+        rightLogo.actionManager = new ActionManager(scene)
+        rightLogo.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
+          alert('alert')
+        }))
+
         var logo01 = scene.getMeshByName("art_logo11");
         logo01.material = materiallogo1;
         var logo02 = scene.getMeshByName("art_logo12");
