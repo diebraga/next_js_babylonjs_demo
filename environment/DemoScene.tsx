@@ -181,7 +181,7 @@ export default function DemoScene() {
         telao.material = materialvideo;
         telao.actionManager = new ActionManager(scene)
         telao.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-          openVideoScreen()
+          openVideoScreen('https://www.youtube.com/embed/uD4izuDMUQA')
         }))
 
         var leftLogo = scene.getMeshByName("art_logo11");
