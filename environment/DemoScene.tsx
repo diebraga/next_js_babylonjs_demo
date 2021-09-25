@@ -27,7 +27,7 @@ export default function DemoScene() {
   const [isLoading, setIsLoading] = useState(false)
   const [moveClick, setMoveClick] = useState(true)
 
-  const { openVideoScreen, openJukeBox, setShowMusic } = useModal()
+  const { openVideoScreen, setShowMusic } = useModal()
   
   var canvas // drawing paper
   var engine // the pen - deal with the low level webgl
@@ -158,23 +158,23 @@ export default function DemoScene() {
       }));
 
         var materiallogo1= new StandardMaterial("materiallogo1", scene);
-        materiallogo1.diffuseTexture = new Texture(`/jukebox.jpg`, scene);
-        materiallogo1.emissiveTexture = new Texture(`/jukebox.jpg`, scene);
+        materiallogo1.diffuseTexture = new Texture(`https://cdn.pixabay.com/photo/2012/04/13/13/23/disc-32390_960_720.png`, scene);
+        materiallogo1.emissiveTexture = new Texture(`https://cdn.pixabay.com/photo/2012/04/13/13/23/disc-32390_960_720.png`, scene);
         materiallogo1.specularColor = new Color3(0, 0, 0);
         materiallogo1.freeze();
         var materiallogo2= new StandardMaterial("materiallogo2", scene);
-        materiallogo2.diffuseTexture = new Texture(`/screen.png`, scene);
-        materiallogo2.emissiveTexture = new Texture(`/screen.png`, scene);
+        materiallogo2.diffuseTexture = new Texture(`https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1072&q=80`, scene);
+        materiallogo2.emissiveTexture = new Texture(`https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1072&q=80`, scene);
         materiallogo2.specularColor = new Color3(0, 0, 0);
         materiallogo2.freeze();
         var materialweb= new StandardMaterial("materialweb", scene);
-        materialweb.diffuseTexture = new Texture(`/web.png`, scene);
-        materialweb.emissiveTexture = new Texture(`/web.png`, scene);
+        materialweb.diffuseTexture = new Texture(`https://cdn.pixabay.com/photo/2020/05/29/22/00/field-5236879_960_720.jpg`, scene);
+        materialweb.emissiveTexture = new Texture(`https://cdn.pixabay.com/photo/2020/05/29/22/00/field-5236879_960_720.jpg`, scene);
         materialweb.specularColor = new Color3(0, 0, 0);
         materialweb.freeze();
         var materialvideo= new StandardMaterial("materialvideo", scene);
-        materialvideo.diffuseTexture = new Texture(`/web.png`, scene);
-        materialvideo.emissiveTexture = new Texture(`/web.png`, scene);
+        materialvideo.diffuseTexture = new Texture(`https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1179&q=80`, scene);
+        materialvideo.emissiveTexture = new Texture(`https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1179&q=80`, scene);
         materialvideo.specularColor = new Color3(0, 0, 0);
         materialvideo.freeze();
         var telao = scene.getMeshByName("art_telao");
@@ -205,7 +205,7 @@ export default function DemoScene() {
         web.material = materialweb;
         web.actionManager = new ActionManager(scene);
         web.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-        window.open('https://github.com/diebraga/full_stack_nextjs_auth', "_blank");
+        window.open('https://github.com/diebraga/next_auth_babylonjs_starter', "_blank");
         }));
             
       
