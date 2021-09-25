@@ -60,3 +60,14 @@ model VerificationRequest {
 
   @@unique([identifier, token])
 }
+
+model Game {
+  id         String   @id @default(cuid())
+  image_left_url        String   
+  image_video_url String
+  image_right_url      String   
+  image_web_url    String
+  repo_url  String
+
+  @@map(name: "game")
+}

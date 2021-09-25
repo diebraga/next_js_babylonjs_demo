@@ -168,13 +168,13 @@ export default function DemoScene() {
         materiallogo2.specularColor = new Color3(0, 0, 0);
         materiallogo2.freeze();
         var materialweb= new StandardMaterial("materialweb", scene);
-        materialweb.diffuseTexture = new Texture(`/screen.png`, scene);
-        materialweb.emissiveTexture = new Texture(`/screen.png`, scene);
+        materialweb.diffuseTexture = new Texture(`/web.png`, scene);
+        materialweb.emissiveTexture = new Texture(`/web.png`, scene);
         materialweb.specularColor = new Color3(0, 0, 0);
         materialweb.freeze();
         var materialvideo= new StandardMaterial("materialvideo", scene);
-        materialvideo.diffuseTexture = new Texture(`/screen.png`, scene);
-        materialvideo.emissiveTexture = new Texture(`/screen.png`, scene);
+        materialvideo.diffuseTexture = new Texture(`/web.png`, scene);
+        materialvideo.emissiveTexture = new Texture(`/web.png`, scene);
         materialvideo.specularColor = new Color3(0, 0, 0);
         materialvideo.freeze();
         var telao = scene.getMeshByName("art_telao");
@@ -190,11 +190,11 @@ export default function DemoScene() {
           setShowMusic('visible')
         }))
 
-        var rightLogo = scene.getMeshByName("art_logo12");
-        rightLogo.actionManager = new ActionManager(scene)
-        rightLogo.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-          alert('alert')
-        }))
+        // var rightLogo = scene.getMeshByName("art_logo12");
+        // rightLogo.actionManager = new ActionManager(scene)
+        // rightLogo.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
+        //   alert('alert')
+        // }))
 
         var logo01 = scene.getMeshByName("art_logo11");
         logo01.material = materiallogo1;
@@ -205,7 +205,7 @@ export default function DemoScene() {
         web.material = materialweb;
         web.actionManager = new ActionManager(scene);
         web.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-        window.open('', "_blank");
+        window.open('https://github.com/diebraga/full_stack_nextjs_auth', "_blank");
         }));
             
       

@@ -54,6 +54,7 @@ export function ModalProvider({ children }: ModalProviderProp) {
     setModalBody(<ScreenVideo />)
     setModalMaxWidth('80%')
     setModalBackground('transparent')
+    pauseMusic()
   }
 
   function openJukeBox() {

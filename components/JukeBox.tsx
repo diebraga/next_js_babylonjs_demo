@@ -39,6 +39,12 @@ export default function JukeBox() {
           colorScheme='blue'>
           deephouse radio
         </Button>
+        <Button
+          onClick={() => playMusic('/sounds/reggae.m4a')}
+          isActive={music === '/sounds/reggae.m4a'}
+          colorScheme='blue'>
+          reggae radio
+        </Button>
         <CloseButton onClick={() => setShowMusic('hidden')} />
       </Wrap>
       <audio
