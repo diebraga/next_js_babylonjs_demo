@@ -1,6 +1,9 @@
 import { Box, Center } from "@chakra-ui/react";
+import { useModal } from "../contexts/useModal";
 
 export default function ScreenVideo() {
+  const { videoUrl } = useModal()
+
   return (
     <Center mt='28px'>
       <Box
@@ -8,7 +11,7 @@ export default function ScreenVideo() {
         borderRadius='30px'
         width="80%"
         height="600px"
-        src='https://www.youtube.com/embed/uD4izuDMUQA' />
+        src={videoUrl} />
     </Center>
   )
 }

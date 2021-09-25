@@ -19,12 +19,13 @@ interface ModalContextProps {
   setModalMaxWidth: Dispatch<any>
   modalBackground: string
   setModalBackground: Dispatch<string>
-  openVideoScreen: () => void
+  openVideoScreen: (url: string) => void
   openJukeBox: () => void
   musicRef: MutableRefObject<any>
   startMusic: () => void
   setShowMusic: Dispatch<string>
   showMusic: string
+  videoUrl: string
 }
 
 export const ModalContext = createContext({} as ModalContextProps)
@@ -35,6 +36,7 @@ export function ModalProvider({ children }: ModalProviderProp) {
   const [modalTitle, setModalTitle] = useState('')
   const [modalMaxWidth, setModalMaxWidth] = useState('80%')
   const [modalBackground, setModalBackground] = useState(null)
+  const [videoUrl, setVideoUrl] = useState('')
   const musicRef = useRef(null)
   const [showMusic, setShowMusic] = useState('hidden')
 
@@ -48,13 +50,14 @@ export function ModalProvider({ children }: ModalProviderProp) {
     musicRef.current.pause()
   }
 
-  function openVideoScreen() {
+  function openVideoScreen(url: string) {
     onOpen()
     setModalTitle(null)
     setModalBody(<ScreenVideo />)
     setModalMaxWidth('80%')
     setModalBackground('transparent')
     pauseMusic()
+    setVideoUrl(url)
   }
 
   function openJukeBox() {
@@ -83,7 +86,8 @@ export function ModalProvider({ children }: ModalProviderProp) {
       openJukeBox,
       startMusic,
       showMusic, 
-      setShowMusic
+      setShowMusic,
+      videoUrl
     }}>
       {children}
     </ModalContext.Provider>
