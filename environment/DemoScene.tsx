@@ -27,7 +27,7 @@ export default function DemoScene() {
   const [isLoading, setIsLoading] = useState(false)
   const [moveClick, setMoveClick] = useState(true)
 
-  const { openVideoScreen, openJukeBox } = useModal()
+  const { openVideoScreen, openJukeBox, setShowMusic } = useModal()
   
   var canvas // drawing paper
   var engine // the pen - deal with the low level webgl
@@ -187,7 +187,7 @@ export default function DemoScene() {
         var leftLogo = scene.getMeshByName("art_logo11");
         leftLogo.actionManager = new ActionManager(scene)
         leftLogo.actionManager.registerAction(new ExecuteCodeAction(ActionManager.OnPickTrigger, function () {
-          openJukeBox()
+          setShowMusic('visible')
         }))
 
         var rightLogo = scene.getMeshByName("art_logo12");

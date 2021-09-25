@@ -1,5 +1,5 @@
 import { useDisclosure } from '@chakra-ui/react'
-import { createContext, Dispatch, ReactNode, useContext, useState } from 'react'
+import { createContext, Dispatch, MutableRefObject, ReactNode, useContext, useRef, useState } from 'react'
 import JukeBox from '../components/JukeBox'
 import ScreenVideo from '../components/ScreenVideo'
 
@@ -21,6 +21,10 @@ interface ModalContextProps {
   setModalBackground: Dispatch<string>
   openVideoScreen: () => void
   openJukeBox: () => void
+  musicRef: MutableRefObject<any>
+  startMusic: () => void
+  setShowMusic: Dispatch<string>
+  showMusic: string
 }
 
 export const ModalContext = createContext({} as ModalContextProps)
@@ -31,6 +35,18 @@ export function ModalProvider({ children }: ModalProviderProp) {
   const [modalTitle, setModalTitle] = useState('')
   const [modalMaxWidth, setModalMaxWidth] = useState('80%')
   const [modalBackground, setModalBackground] = useState(null)
+  const musicRef = useRef(null)
+  const [showMusic, setShowMusic] = useState('hidden')
+
+  function startMusic() {
+    musicRef.current.play()
+    // som 20%
+    musicRef.current.volume = 0.2
+  }
+
+  function pauseMusic() {
+    musicRef.current.pause()
+  }
 
   function openVideoScreen() {
     onOpen()
@@ -53,6 +69,7 @@ export function ModalProvider({ children }: ModalProviderProp) {
       isOpen,
       onClose,
       onOpen,
+      musicRef,
       modalBody,
       setModalBody,
       modalTitle,
@@ -62,7 +79,10 @@ export function ModalProvider({ children }: ModalProviderProp) {
       modalBackground,
       setModalBackground,
       openVideoScreen,
-      openJukeBox
+      openJukeBox,
+      startMusic,
+      showMusic, 
+      setShowMusic
     }}>
       {children}
     </ModalContext.Provider>
